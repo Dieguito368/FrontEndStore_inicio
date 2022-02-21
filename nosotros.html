@@ -1,40 +1,56 @@
 <!DOCTYPE html>
 
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>FrontEnd Store</title>
-        <!-- Normalize  -->
-        <link rel="preload" href="css/normalize.css" as="style">
-        <link rel="stylesheet" href="css/normalize.css">
 
-        <!-- Estilos  -->
-        <link rel="preload" href="css/styles.css" as="style">
-        <link rel="stylesheet" href="css/styles.css"> 
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEnd Store</title>
+    <!-- Normalize  -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
 
-    <body>
-        <header class="header">
-            <a href="index.html">
-                <img class="header__logo" src="img/logo.png" alt="Logotipo">
-            </a>
-        </header>
+    <!-- Estilos  -->
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
 
-        <nav class="navegacion">
-            <a class="navegacion__enlace" href="index.html">Tienda</a>
-            <a class="navegacion__enlace navegacion__enlace--activo" href="nosotros.html">Nosotros</a>
-        </nav>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img class="header__logo" src="img/logo.png" alt="Logotipo">
+        </a>
+    </header>
 
-        <main>
-            <h1>Nosotros</h1>
+    <nav class="navegacion">
+        <a class="navegacion__enlace" href="index.html">Tienda</a>
+        <a class="navegacion__enlace navegacion__enlace--activo" href="nosotros.html">Nosotros</a>
+    </nav>
 
+    <main class="contenedor">
+        <h1>Nosotros</h1>
 
-        </main>
+        <div class="nosotros">
+            <div class="nosotros__contenido">
+                <p>Nullam interdum ultrices erat, a cursus justo tempus nec. Etiam sodales ac ante ac porta. Maecenas
+                    blandit nibh nec accumsan lobortis. Fusce elit tellus, euismod eu odio vitae, suscipit consequat ex.
+                    Curabitur metus velit, pretium ac nibh in, commodo egestas mauris. Cras et pharetra purus. Nullam
+                    vitae posuere dui. Ut diam nisi, convallis a sapien quis, ornare mollis erat.</p>
 
-        <footer class="footer">
-            <p class="footer__texto">Front End Store - Todos los derechos Reservados 2022.</p>
-        </footer>
-    </body>
+                <p>Duis ac turpis eu tellus eleifend feugiat in eget neque. Nunc id lacus vitae lectus eleifend rhoncus
+                    quis ut lectus. Nam sit amet sem vitae magna mollis placerat ut a nisi. Nulla facilisi. Suspendisse
+                    sem erat, aliquet eget nisl ut, laoreet consectetur ante. Vivamus lacinia augue dolor, id varius est
+                    interdum ut. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+            </div>
+
+            <img class="nosotros__imagen" src="img/nosotros.jpg" alt="nosotros">
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__texto">Front End Store - Todos los derechos Reservados 2022.</p>
+    </footer>
+</body>
+
 </html>
