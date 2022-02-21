@@ -90,3 +90,16 @@ h1, h2, h3 {
 .navegacion__enlace:hover {
     color: var(--secundario);
 }
+
+/* Footer */
+.footer {
+    background-color: var(--primarioOscuro);
+    padding: 1rem 0;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.footer__texto {
+    font-family: var(--fuentePrincipal);
+    font-size: 2rem;
+}
