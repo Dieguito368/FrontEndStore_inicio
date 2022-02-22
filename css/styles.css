@@ -201,6 +201,7 @@ h1, h2, h3 {
 
 @media (min-width: 768px) {
     .nosotros {
+        grid-template-rows: auto;
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -214,6 +215,37 @@ h1, h2, h3 {
     .nosotros__imagen {
         grid-column: 2 / 3;
     }    
+}
+
+/* Comprar */
+.comprar {
+    margin: 4rem 0;
+}
+
+.comprar__titulo {
+    margin: 0;
+}
+
+/* Bloques */
+.bloques {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+}
+
+@media (min-width: 1280px) {
+    .bloques {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.bloque {
+    text-align: center;
+}
+
+.bloque__titulo {
+    margin: 0;
+    margin-bottom: 1rem;
 }
 
 /* Footer */
