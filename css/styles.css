@@ -229,17 +229,19 @@ h1, h2, h3 {
 /* Bloques */
 .bloques {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 5rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 480px) {
     .bloques {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
+}
 
-    .bloque:nth-child(4) {
-        grid-column: 2 / 3;
+@media (min-width: 1280px) {
+    .bloques {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
@@ -247,16 +249,12 @@ h1, h2, h3 {
     text-align: center;
 }
 
-@media (min-width: 768px) {
-    .bloque:nth-child(4) {
-        grid-column: 2 / 3;
-    }
-}
-
 .bloque__titulo {
     margin: 0;
     margin-bottom: 1rem;
 }
+
+/* Producto */
 
 /* Footer */
 .footer {
