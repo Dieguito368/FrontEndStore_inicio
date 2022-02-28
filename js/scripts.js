@@ -8,14 +8,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         divProductos.forEach(divProducto => {
             const nombreProducto = divProducto.children[1].children[0].textContent;
-    
             const producto = divProducto.children[0];
 
             producto.setAttribute('href', 'producto.html?' + nombreProducto);
+            divProducto.children[0].children[0].setAttribute('alt', nombreProducto);
         });
-
-        
-        
     } else {
         const url = window.location.href;
         const split = url.split('?')
@@ -26,9 +23,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
         console.log(nombre);
     }
-
-
-    
-
-    
 });
